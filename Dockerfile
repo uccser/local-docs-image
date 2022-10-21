@@ -17,4 +17,4 @@ ENV LANGUAGE C.UTF-8
 EXPOSE 7000
 
 # Set runtime command to autobuild and serve documentation
-CMD sphinx-autobuild -b html --host 0.0.0.0 --port 7000 /docs /docs_build
+CMD sphinx-autobuild -b html -W --keep-going -a --host 0.0.0.0 --port 7000 /docs /docs_build
